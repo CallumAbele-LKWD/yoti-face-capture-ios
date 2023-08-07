@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7196A3664970F98C28144FD6 /* Pods_LockwoodYoti.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E65EC76F515586D88FB487DA /* Pods_LockwoodYoti.framework */; };
+		79343D6930D36767B06B4F43 /* Pods_Sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2071174DFC472A9E60E4EAA7 /* Pods_Sample.framework */; };
+		8F3742002A7A7510005C1ED0 /* LockwoodYotiBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3741FF2A7A7510005C1ED0 /* LockwoodYotiBridge.swift */; };
+		8F3742092A7A75D9005C1ED0 /* LockwoodYoti.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F3742082A7A75D9005C1ED0 /* LockwoodYoti.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F3742122A7A7603005C1ED0 /* CameraPermissionDeniedDisplaying.swift in Sources */ = {isa = PBXBuildFile; fileRef = C847BE5F25C424C900579F8A /* CameraPermissionDeniedDisplaying.swift */; };
+		8F3742132A7A7603005C1ED0 /* UIViewController+AlertExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C847BE5C25C4243400579F8A /* UIViewController+AlertExtension.swift */; };
+		8F3742142A7A7603005C1ED0 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3FF8232A41A439002178BC /* RoundedButton.swift */; };
+		8F3742162A7A7603005C1ED0 /* UIImage+ImageWithColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C847BE7325C429F400579F8A /* UIImage+ImageWithColor.swift */; };
+		8F3742172A7A7603005C1ED0 /* FaceCaptureOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C847BE6425C4277D00579F8A /* FaceCaptureOverlayView.swift */; };
+		8F3742182A7A7603005C1ED0 /* CGRect+Scaling.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3FF8212A41A3F3002178BC /* CGRect+Scaling.swift */; };
+		8F3742192A7A7603005C1ED0 /* LockwoodYotiBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3741FF2A7A7510005C1ED0 /* LockwoodYotiBridge.swift */; };
+		8F37421A2A7A7603005C1ED0 /* FaceCaptureAnalysisError+DisplayErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C847BE7625C42B6000579F8A /* FaceCaptureAnalysisError+DisplayErrorMessage.swift */; };
+		8F37421B2A7A7603005C1ED0 /* AutoLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C847BE6925C4284000579F8A /* AutoLayoutView.swift */; };
+		8F37421C2A7A7603005C1ED0 /* UIColor+PrimaryButtonColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C847BE7025C4293D00579F8A /* UIColor+PrimaryButtonColor.swift */; };
+		8F37421D2A7A7730005C1ED0 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81DB85A25C3251E000912FC /* CameraViewController.swift */; };
+		8F92A17E2A7BEDBD00685A4E /* LockwoodYotiDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F92A17D2A7BEDBD00685A4E /* LockwoodYotiDelegate.swift */; };
+		8F92A17F2A7BEDBE00685A4E /* LockwoodYotiDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F92A17D2A7BEDBD00685A4E /* LockwoodYotiDelegate.swift */; };
 		C81DB86525C3251E000912FC /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81DB85A25C3251E000912FC /* CameraViewController.swift */; };
 		C81DB86625C3251E000912FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81DB85C25C3251E000912FC /* AppDelegate.swift */; };
 		C81DB86725C3251E000912FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81DB85D25C3251E000912FC /* SceneDelegate.swift */; };
@@ -25,6 +42,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2071174DFC472A9E60E4EAA7 /* Pods_Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F0C941B2A7A782900834C7F /* YotiFaceCapture.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = YotiFaceCapture.xcframework; path = Pods/YotiFaceCapture/YotiFaceCapture/YotiFaceCapture.xcframework; sourceTree = "<group>"; };
+		8F3741FF2A7A7510005C1ED0 /* LockwoodYotiBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockwoodYotiBridge.swift; sourceTree = "<group>"; };
+		8F3742062A7A75D9005C1ED0 /* LockwoodYoti.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LockwoodYoti.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F3742082A7A75D9005C1ED0 /* LockwoodYoti.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LockwoodYoti.h; sourceTree = "<group>"; };
+		8F92A17D2A7BEDBD00685A4E /* LockwoodYotiDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockwoodYotiDelegate.swift; sourceTree = "<group>"; };
+		990D75DB23D07BD8B8CCBFE4 /* Pods-Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample.debug.xcconfig"; path = "Target Support Files/Pods-Sample/Pods-Sample.debug.xcconfig"; sourceTree = "<group>"; };
 		C81DB83825C3245C000912FC /* Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C81DB85A25C3251E000912FC /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		C81DB85C25C3251E000912FC /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,24 +66,69 @@
 		C847BE7625C42B6000579F8A /* FaceCaptureAnalysisError+DisplayErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FaceCaptureAnalysisError+DisplayErrorMessage.swift"; sourceTree = "<group>"; };
 		CE3FF8212A41A3F3002178BC /* CGRect+Scaling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Scaling.swift"; sourceTree = "<group>"; };
 		CE3FF8232A41A439002178BC /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		D6A44D2EA61D48022C8512D1 /* Pods-LockwoodYoti.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LockwoodYoti.debug.xcconfig"; path = "Target Support Files/Pods-LockwoodYoti/Pods-LockwoodYoti.debug.xcconfig"; sourceTree = "<group>"; };
+		DCD3257F10A1AFBA528AD196 /* Pods-LockwoodYoti.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LockwoodYoti.release.xcconfig"; path = "Target Support Files/Pods-LockwoodYoti/Pods-LockwoodYoti.release.xcconfig"; sourceTree = "<group>"; };
+		E65EC76F515586D88FB487DA /* Pods_LockwoodYoti.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LockwoodYoti.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD853F6C7E10CAEDCAA15E3C /* Pods-Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sample.release.xcconfig"; path = "Target Support Files/Pods-Sample/Pods-Sample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8F3742032A7A75D9005C1ED0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7196A3664970F98C28144FD6 /* Pods_LockwoodYoti.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C81DB83525C3245C000912FC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79343D6930D36767B06B4F43 /* Pods_Sample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		256DA3B810CF2D49E8CFF13B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F0C941B2A7A782900834C7F /* YotiFaceCapture.xcframework */,
+				2071174DFC472A9E60E4EAA7 /* Pods_Sample.framework */,
+				E65EC76F515586D88FB487DA /* Pods_LockwoodYoti.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		846767B088EE8F65777EDF06 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				990D75DB23D07BD8B8CCBFE4 /* Pods-Sample.debug.xcconfig */,
+				FD853F6C7E10CAEDCAA15E3C /* Pods-Sample.release.xcconfig */,
+				D6A44D2EA61D48022C8512D1 /* Pods-LockwoodYoti.debug.xcconfig */,
+				DCD3257F10A1AFBA528AD196 /* Pods-LockwoodYoti.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8F3742072A7A75D9005C1ED0 /* LockwoodYoti */ = {
+			isa = PBXGroup;
+			children = (
+				8F3742082A7A75D9005C1ED0 /* LockwoodYoti.h */,
+			);
+			path = LockwoodYoti;
+			sourceTree = "<group>";
+		};
 		C81DB82F25C3245C000912FC = {
 			isa = PBXGroup;
 			children = (
+				8F3742072A7A75D9005C1ED0 /* LockwoodYoti */,
 				C81DB83925C3245C000912FC /* Products */,
 				C81DB85825C32509000912FC /* Sources */,
+				846767B088EE8F65777EDF06 /* Pods */,
+				256DA3B810CF2D49E8CFF13B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				C81DB83825C3245C000912FC /* Sample.app */,
+				8F3742062A7A75D9005C1ED0 /* LockwoodYoti.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -75,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				C81DB85925C3251E000912FC /* Sample */,
+				8F92A17D2A7BEDBD00685A4E /* LockwoodYotiDelegate.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -89,6 +160,7 @@
 				C847BEFF25C45AA300579F8A /* Resources */,
 				C81DB85E25C3251E000912FC /* SupportingFiles */,
 				C847BE6325C4274400579F8A /* Views */,
+				8F3741FF2A7A7510005C1ED0 /* LockwoodYotiBridge.swift */,
 			);
 			path = Sample;
 			sourceTree = "<group>";
@@ -160,7 +232,37 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		8F3742012A7A75D9005C1ED0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F3742092A7A75D9005C1ED0 /* LockwoodYoti.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		8F3742052A7A75D9005C1ED0 /* LockwoodYoti */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F37420E2A7A75DA005C1ED0 /* Build configuration list for PBXNativeTarget "LockwoodYoti" */;
+			buildPhases = (
+				C1BA01EF40AC931E84F4A4D2 /* [CP] Check Pods Manifest.lock */,
+				8F3742012A7A75D9005C1ED0 /* Headers */,
+				8F3742022A7A75D9005C1ED0 /* Sources */,
+				8F3742032A7A75D9005C1ED0 /* Frameworks */,
+				8F3742042A7A75D9005C1ED0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LockwoodYoti;
+			productName = LockwoodYoti;
+			productReference = 8F3742062A7A75D9005C1ED0 /* LockwoodYoti.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		C81DB83725C3245C000912FC /* Sample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C81DB84C25C3245E000912FC /* Build configuration list for PBXNativeTarget "Sample" */;
@@ -190,6 +292,9 @@
 				LastUpgradeCheck = 1230;
 				ORGANIZATIONNAME = "Yoti Ltd";
 				TargetAttributes = {
+					8F3742052A7A75D9005C1ED0 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
 					C81DB83725C3245C000912FC = {
 						CreatedOnToolsVersion = 12.3;
 					};
@@ -209,11 +314,19 @@
 			projectRoot = "";
 			targets = (
 				C81DB83725C3245C000912FC /* Sample */,
+				8F3742052A7A75D9005C1ED0 /* LockwoodYoti */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		8F3742042A7A75D9005C1ED0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C81DB83625C3245C000912FC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -227,6 +340,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		C1BA01EF40AC931E84F4A4D2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LockwoodYoti-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E134250B03EE973E39DA8CB5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -269,6 +404,25 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8F3742022A7A75D9005C1ED0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F37421D2A7A7730005C1ED0 /* CameraViewController.swift in Sources */,
+				8F3742122A7A7603005C1ED0 /* CameraPermissionDeniedDisplaying.swift in Sources */,
+				8F37421C2A7A7603005C1ED0 /* UIColor+PrimaryButtonColor.swift in Sources */,
+				8F92A17F2A7BEDBE00685A4E /* LockwoodYotiDelegate.swift in Sources */,
+				8F3742142A7A7603005C1ED0 /* RoundedButton.swift in Sources */,
+				8F3742182A7A7603005C1ED0 /* CGRect+Scaling.swift in Sources */,
+				8F3742162A7A7603005C1ED0 /* UIImage+ImageWithColor.swift in Sources */,
+				8F3742132A7A7603005C1ED0 /* UIViewController+AlertExtension.swift in Sources */,
+				8F37421A2A7A7603005C1ED0 /* FaceCaptureAnalysisError+DisplayErrorMessage.swift in Sources */,
+				8F37421B2A7A7603005C1ED0 /* AutoLayoutView.swift in Sources */,
+				8F3742172A7A7603005C1ED0 /* FaceCaptureOverlayView.swift in Sources */,
+				8F3742192A7A7603005C1ED0 /* LockwoodYotiBridge.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C81DB83425C3245C000912FC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -284,7 +438,9 @@
 				C81DB86725C3251E000912FC /* SceneDelegate.swift in Sources */,
 				C847BE7725C42B6000579F8A /* FaceCaptureAnalysisError+DisplayErrorMessage.swift in Sources */,
 				C847BE6525C4277D00579F8A /* FaceCaptureOverlayView.swift in Sources */,
+				8F3742002A7A7510005C1ED0 /* LockwoodYotiBridge.swift in Sources */,
 				CE3FF8222A41A3F3002178BC /* CGRect+Scaling.swift in Sources */,
+				8F92A17E2A7BEDBD00685A4E /* LockwoodYotiDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +466,78 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		8F37420F2A7A75DA005C1ED0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6A44D2EA61D48022C8512D1 /* Pods-LockwoodYoti.debug.xcconfig */;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = RXEYAWHX7N;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 Yoti Ltd. All rights reserved.";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lockwoodpublishing.LockwoodYoti;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8F3742102A7A75DA005C1ED0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCD3257F10A1AFBA528AD196 /* Pods-LockwoodYoti.release.xcconfig */;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = RXEYAWHX7N;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 Yoti Ltd. All rights reserved.";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lockwoodpublishing.LockwoodYoti;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		C81DB84A25C3245E000912FC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -428,11 +656,12 @@
 		};
 		C81DB84D25C3245E000912FC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 990D75DB23D07BD8B8CCBFE4 /* Pods-Sample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6VUTP72GG4;
+				DEVELOPMENT_TEAM = RXEYAWHX7N;
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Sample/SupportingFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
@@ -445,11 +674,12 @@
 		};
 		C81DB84E25C3245E000912FC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD853F6C7E10CAEDCAA15E3C /* Pods-Sample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6VUTP72GG4;
+				DEVELOPMENT_TEAM = RXEYAWHX7N;
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Sample/SupportingFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
@@ -463,6 +693,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8F37420E2A7A75DA005C1ED0 /* Build configuration list for PBXNativeTarget "LockwoodYoti" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F37420F2A7A75DA005C1ED0 /* Debug */,
+				8F3742102A7A75DA005C1ED0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C81DB83325C3245C000912FC /* Build configuration list for PBXProject "Sample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

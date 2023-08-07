@@ -29,7 +29,6 @@ final class FaceCaptureOverlayView: UIView {
     
     private lazy var debugButton: RoundedButton = {
         let button = RoundedButton(imageName: "icoScanningArea")
-        button.action = debugButtonAction
         button.switchOff()
         return button
     }()
@@ -63,17 +62,6 @@ final class FaceCaptureOverlayView: UIView {
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         setUpView()
-    }
-    
-    func debugButtonAction(state: RoundedButtonState) {
-        switch state {
-            case .on:
-                faceDetectionLayer.isHidden = false
-                croppedFaceDetectionLayer.isHidden = false
-            case .off:
-                faceDetectionLayer.isHidden = true
-                croppedFaceDetectionLayer.isHidden = true
-        }
     }
 }
 
@@ -145,6 +133,10 @@ private extension FaceCaptureOverlayView {
 extension FaceCaptureOverlayView: FaceCaptureOverlayViewable {
     func setInstructionLabelText(_ text: String) {
         instructionLabel.text = text
+    }
+    
+    func setButtonAction(action:@escaping RoundedButton.Action) {
+        debugButton.action = action
     }
     
     func setCapturedImageWithData(_ data: Data?) {

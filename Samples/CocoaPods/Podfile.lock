@@ -1,0 +1,16 @@
+PODS:
+  - YotiFaceCapture (5.1.0)
+
+DEPENDENCIES:
+  - YotiFaceCapture
+
+SPEC REPOS:
+  trunk:
+    - YotiFaceCapture
+
+SPEC CHECKSUMS:
+  YotiFaceCapture: 936fd35840467aef64968090b1ffc90fdc3882cd
+
+PODFILE CHECKSUM: 9716809d98ad2f94847304ab1c4d2adeaafe28f9
+
+COCOAPODS: 1.11.2

@@ -7,6 +7,9 @@ import UIKit
 import YotiFaceCapture
 
 final class CameraViewController: UIViewController {
+    
+    private var cameraStopped:Bool = false
+    
     private lazy var faceCaptureViewController: YotiFaceCapture.FaceCaptureViewController = {
         let faceCaptureViewController = FaceCapture.faceCaptureViewController()
         faceCaptureViewController.delegate = self
@@ -14,21 +17,26 @@ final class CameraViewController: UIViewController {
         return faceCaptureViewController
     }()
     
-    private lazy var faceCaptureOverlayView: FaceCaptureOverlayViewable & UIView = FaceCaptureOverlayView()
+    private lazy var faceCaptureOverlayView: FaceCaptureOverlayViewable & FaceCaptureOverlayView = FaceCaptureOverlayView()
     
     private let faceCenter = CGPoint(x: 0.5, y: 0.45)
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    
         setUpView()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         addFaceCaptureViewController()
-        requestCameraAccess()
+        
+        if cameraStopped == false {
+            requestCameraAccess()
+        }
+        
     }
-    
+        
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         removeFaceCaptureViewController()
@@ -38,14 +46,26 @@ final class CameraViewController: UIViewController {
 // MARK: - FaceCaptureViewDelegate
 extension CameraViewController: FaceCaptureViewDelegate {
     func faceCaptureStateDidChange(to state: FaceCaptureState) {
+        
+        print("CameraViewController::faceCaptureStateDidChange To Value %d",state.rawValue)
+        print("CameraViewController::faceCaptureStateDidChange cameraStopped is \(cameraStopped)")
+       
         switch state {
             case .cameraReady:
                 faceCaptureOverlayView.setInstructionLabelText("Align your face here")
-                startFaceAnalysis()
-            case .cameraStopped,
-                    .analyzing:
+                if cameraStopped {
+                    stopFaceAnalysis()
+                }
+                else {
+                    startFaceAnalysis()
+                }
+            case .analyzing:
+                if cameraStopped {
+                    stopFaceAnalysis()
+                }
+            case .cameraStopped:
                 break
-            @unknown default:
+        @unknown default:
                 faceCaptureStateFailed(withError: .invalidState)
         }
     }
@@ -101,6 +121,9 @@ private extension CameraViewController {
             faceCaptureOverlayView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
             faceCaptureOverlayView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
         ])
+        
+        faceCaptureOverlayView.setButtonAction(action: didPressButton)
+        
     }
     
     func requestCameraAccess() {
@@ -115,16 +138,35 @@ private extension CameraViewController {
         }
     }
     
+    func didPressButton(state:RoundedButtonState) {
+        cameraStopped = true
+        stopCamera()
+        
+    }
+    
     func startCamera() {
+        print("CameraViewController::startCamera")
         faceCaptureViewController.startCamera()
     }
     
+    func stopCamera() {
+        print("CameraViewController::stopCamera")
+        faceCaptureViewController.stopCamera()
+    }
+    
     func startFaceAnalysis() {
+        print("CameraViewController::startFaceAnalysis")
         let faceCaptureConfiguration = Configuration(
             faceCenter: faceCenter,
             imageQuality: .default
         )
         faceCaptureViewController.startAnalyzing(withConfiguration: faceCaptureConfiguration)
+    }
+    
+    func stopFaceAnalysis() {
+        print("CameraViewController::stopFaceAnalysis")
+        faceCaptureViewController.stopAnalyzing()
+        LockwoodYotiBridge.delegate?.DidFinishAnalysing()
     }
 }
 

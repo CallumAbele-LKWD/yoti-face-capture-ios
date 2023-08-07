@@ -4,3 +4,8 @@ target 'Sample' do
   use_frameworks!
   pod 'YotiFaceCapture'
 end
+
+target 'LockwoodYoti' do
+  use_frameworks!
+  pod 'YotiFaceCapture'
+end

@@ -13,7 +13,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         willConnectTo session: UISceneSession,
         options connectionOptions: UIScene.ConnectionOptions
     ) {
-        guard let _ = (scene as? UIWindowScene) else { return }
+        if let windowScene = scene as? UIWindowScene {
+            
+            let window = UIWindow(windowScene: windowScene)
+            window.rootViewController = UIViewController()
+            self.window = window
+            window.makeKeyAndVisible()
+            
+            LockwoodYotiBridge.Show(presentingViewController: window.rootViewController!)
+        }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {}
